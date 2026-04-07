@@ -21,7 +21,7 @@ pkill somebar
 
 # 4. Jalankan Wallpaper dengan log error untuk debug
 # Pastikan path wallpaper benar-benar ada!
-swaybg -i "$HOME/Pictures/ethan-hoover-eIVJAkj1uCs-unsplash.jpg" -m fill > /tmp/swaybg.log 2>&1 &
+swaybg -i "$HOME/pics/wallpaper" -m fill > /tmp/swaybg.log 2>&1 &
 
 # 5. Status blocks
 someblocks &
