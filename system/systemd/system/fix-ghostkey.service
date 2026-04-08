@@ -1,0 +1,14 @@
+[Unit]
+Description=Disable Ghost Key Scancode 56 (KEY_102ND)
+DefaultDependencies=no
+After=systemd-udev-settle.service
+Before=basic.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/setkeycodes 56 255
+RemainAfterExit=yes
+SuccessExitStatus=0 1
+
+[Install]
+WantedBy=multi-user.target
