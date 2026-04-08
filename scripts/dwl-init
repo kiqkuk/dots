@@ -15,7 +15,7 @@ pkill swaybg
 pkill someblocks
 pkill somebar
 
-swaybg -i "$HOME/pics/wallpaper" -m fill > /tmp/swaybg.log 2>&1 &
+swaybg -i "$HOME/pics/wallpaper.jpg" -m fill > /tmp/swaybg.log 2>&1 &
 
 someblocks &
 
