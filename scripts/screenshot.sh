@@ -1,6 +1,6 @@
 #!/bin/sh
 
-FILE="$HOME/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%m-%s').png"
+FILE="$HOME/pics/ss/$(date +'%Y-%m-%d_%H-%m-%s').png"
 mkdir -p "$(dirname "$FILE")"
 
 slurp | grim -g - "$FILE"
