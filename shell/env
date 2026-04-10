@@ -18,7 +18,7 @@ HISTSIZE=10000
 HISTFILESIZE=10000
 shopt -s histappend
 # Keep history synced across multiple terminals
-PROMPT_COMMAND="history -a; history -c; history -r"
+PROMPT_COMMAND="history -a"
 
 # Persistence and Control
 HISTCONTROL=ignoreboth:erasedups

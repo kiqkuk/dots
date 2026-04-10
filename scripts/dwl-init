@@ -1,20 +1,6 @@
 #!/bin/sh
 # --- dwl-init: Internal Autostart ---
 
-: "${WAYLAND_DISPLAY:=wayland-0}"
-export WAYLAND_DISPLAY
-
-MAX_RETRIES=50
-COUNT=0
-while [ ! -S "$XDG_RUNTIME_DIR/$WAYLAND_DISPLAY" ] && [ $COUNT -lt $MAX_RETRIES ]; do
-    sleep 0.1
-    COUNT=$((COUNT + 1))
-done
-
-pkill swaybg
-pkill someblocks
-pkill somebar
-
 swaybg -i "$HOME/pics/wallpaper.jpg" -m fill > /tmp/swaybg.log 2>&1 &
 
 someblocks &
