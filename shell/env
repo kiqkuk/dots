@@ -13,12 +13,12 @@ export PATH="$HOME/dots/scripts:$HOME/.local/bin:$PATH"
 
 # Shell History Management
 # Centralized history file within XDG_STATE_HOME
-export HISTFILE="$XDG_STATE_HOME/bash/history"
+export HISTFILE="$XDG_STATE_HOME/history"
 HISTSIZE=10000
 HISTFILESIZE=10000
-shopt -s histappend
+setopt APPEND_HISTORY
 # Keep history synced across multiple terminals
-PROMPT_COMMAND="history -a"
+setopt SHARE_HISTORY
 
 # Persistence and Control
 HISTCONTROL=ignoreboth:erasedups
@@ -28,4 +28,4 @@ export PYTHONSTARTUP="$XDG_CONFIG_HOME/python/pythonrc"
 export TERMINAL="foot"
 export EDITOR="nvim"
 export VISUAL="nvim"
-
+export SUDO_EDITOR="nvim"

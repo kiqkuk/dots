@@ -8,14 +8,9 @@ SHELLCONF="$HOME/dots/shell"
 [[ -f "$SHELLCONF/env" ]] && . "$SHELLCONF/env"
 
 # Exit if not running interactively
-[[ $- != *i* ]] && return
+[[ -o interactive ]] || return
 
 # Load modular shell components
 [[ -f "$SHELLCONF/completions" ]] && . "$SHELLCONF/completions"
 [[ -f "$SHELLCONF/aliases" ]] && . "$SHELLCONF/aliases"
 [[ -f "$SHELLCONF/prompt" ]] && . "$SHELLCONF/prompt"
-
-# Autostart dwl on TTY1
-if [ -z "$WAYLAND_DISPLAY" ] && [ "$XDG_VTNR" -eq 1 ]; then
-    exec dwl-start
-fi
