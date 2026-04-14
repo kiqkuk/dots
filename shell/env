@@ -15,13 +15,12 @@ export PATH="$HOME/dots/scripts:$HOME/.local/bin:$PATH"
 # Centralized history file within XDG_STATE_HOME
 export HISTFILE="$XDG_STATE_HOME/history"
 HISTSIZE=10000
-HISTFILESIZE=10000
+SAVEHIST=10000
 setopt APPEND_HISTORY
-# Keep history synced across multiple terminals
 setopt SHARE_HISTORY
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_REDUCE_BLANKS
 
-# Persistence and Control
-HISTCONTROL=ignoreboth:erasedups
 export PYTHONSTARTUP="$XDG_CONFIG_HOME/python/pythonrc"
 
 # Default Applications

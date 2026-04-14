@@ -1,1 +1,9 @@
-PROMPT='%N %n %~ %# '
+precmd() {
+  if [[ -z "$FIRST_PROMPT" ]]; then
+    FIRST_PROMPT=1
+  else
+   print ""
+  fi
+}
+
+PROMPT='%B%K{#181825}%F{#a6adc8} %N %k%f%K{#1e1e2e}%F{#cdd6f4} %n %k%f%b%F{#a6adc8} %~ %f%B%F{#b4befe}❯%f%b '

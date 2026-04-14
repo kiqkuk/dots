@@ -2,7 +2,11 @@
 # Configures advanced Tab-completion with menu selection and case-insensitivity.
 
 # Load system-wide zsh completions if available
-autoload -Uz compinit && compinit
+autoload -Uz compinit
+for dump in "${ZDOTDIR:-$HOME}/.zcompdump"(N.mh+24); do
+  compinit
+done
+compinit -C
 
 # Menu completion
 zstyle ':completion:*' menu select

@@ -1,6 +1,6 @@
-# --- BASH MAIN CONFIGURATION ---
+# --- ZSH MAIN CONFIGURATION ---
 # Part of kiqkuk's dotfiles
-# Handles environment, modular shell configs, and TTY1 autostart.
+# Handles environment and modular shell configs.
 
 SHELLCONF="$HOME/dots/shell"
 
