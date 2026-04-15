@@ -1,1 +1,1 @@
-[[ -f ~/dots/shell/config ]] && . ~/dots/shell/config
+[[ -f ~/.local/share/dots/shell/config ]] && . ~/.local/share/dots/shell/config

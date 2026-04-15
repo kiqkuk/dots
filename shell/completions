@@ -1,6 +1,10 @@
 # --- ZSH COMPLETION ---
 # Configures advanced Tab-completion with menu selection and case-insensitivity.
 
+if [[ -d /usr/share/zsh/site-functions ]]; then
+  fpath=(/usr/share/zsh/site-functions $fpath)
+fi
+
 # Load system-wide zsh completions if available
 autoload -Uz compinit
 for dump in "${ZDOTDIR:-$HOME}/.zcompdump"(N.mh+24); do

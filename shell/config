@@ -2,7 +2,7 @@
 # Part of kiqkuk's dotfiles
 # Handles environment and modular shell configs.
 
-SHELLCONF="$HOME/dots/shell"
+SHELLCONF="$HOME/.local/share/dots/shell"
 
 # Load environment & PATH
 [[ -f "$SHELLCONF/env" ]] && . "$SHELLCONF/env"
@@ -14,3 +14,6 @@ SHELLCONF="$HOME/dots/shell"
 [[ -f "$SHELLCONF/completions" ]] && . "$SHELLCONF/completions"
 [[ -f "$SHELLCONF/aliases" ]] && . "$SHELLCONF/aliases"
 [[ -f "$SHELLCONF/prompt" ]] && . "$SHELLCONF/prompt"
+
+# zsh-syntax-highlighting
+[[ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] && . /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

@@ -2,6 +2,10 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias mkdir='mkdir -p'
 
+alias goshell='cd ~/.local/share/dots/shell'
+alias goscript='cd ~/.local/share/dots/scripts'
+alias godots='cd ~/.local/share/dots'
+
 alias ls='ls --color=auto --group-directories-first'
 alias grep='grep --color=auto'
 alias ip='ip -color=auto'
