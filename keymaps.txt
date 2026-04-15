@@ -1,0 +1,70 @@
+
+Mod = Super or Logo
+
+--------------------------------- NAVIGATION ---------------------------------
+
+Mod + j                                               : change focus down
+Mod + k                                               : change focus up
+Mod + h                                               : resize to the left
+Mod + l                                               : resize to the right
+Mod + ,                                               : increase the number of masters
+Mod + .                                               : decrease the number of masters
+Mod + Enter                                           : move to master
+Mod + q                                               : kill client
+Mod + Tab                                             : recently viewed
+Mod + t                                               : tile layout
+Mod + Shift + T                                       : float/freeform
+Mod + Alt + t                                         : monocle
+Mod + Space                                           : toggle layout tile/float
+Mod + Shift + Space                                   : togglefloating
+Mod + f                                               : togglefullscreen
+Mod + Shift + Q                                       : quit session
+Mod + Shift + ?                                       : keymaps
+
+------------------------------ MULTIMEDIA KEYS ------------------------------
+
+Fn + VolUp                                            : Increase Volume
+Fn + VolDown                                          : Decrease Volume
+Fn + Mute                                             : Mute
+
+----------------------------------- APPS -----------------------------------
+
+Mod + Shift + Enter                                   : terminal
+Mod + p                                               : menu/apps drawer
+Mod + b                                               : browser
+Mod + c                                               : connect/wifi
+Mod + s                                               : screenshot
+Mod + v                                               : clipboard
+
+------------------------------ TAGS NAVIGATION ------------------------------
+
+Mod + "Tag_number"                                    : move focused tag
+Mod + Shift + "Tag_number"                            : move client
+Mod + 0                                               : focus all tags
+Mod + Shift + )                                       : pin client on all tags
+
+------------------------------- GAPS CONTROL -------------------------------
+
+Mod + Alt + h                                         : increase gaps
+Mod + Alt + l                                         : decrease gaps
+Mod + Alt + Shift + H                                 : increase outer gaps
+Mod + Alt + Shift + L                                 : decrease outer gaps
+Mod + Alt + Ctrl + h                                  : increase inner gaps
+Mod + Alt + Ctrl + l                                  : decrease inner gaps
+Mod + Alt + 0                                         : toggle gaps on/off
+Mod + Alt + Shift + )                                 : default gaps
+Mod + y                                               : increase inner horizontal gaps
+Mod + o                                               : decrease inner horizontal gaps
+Mod + Ctrl + y                                        : increase inner vertical gaps
+Mod + Ctrl + o                                        : decrease inner vertical gaps
+Mod + Alt + y                                         : increase outer horizontal gaps
+Mod + Alt + o                                         : decrease outer horizontal gaps   
+Mod + Shift + Y                                       : increase outer vertical gaps     
+Mod + Shift + O                                       : decrease outer vertical gaps     
+                                                                                         
+----------------------------- MULTIMON CONTROL -----------------------------
+
+Mod + Alt + ,                                         : move focus to the left mon       
+Mod + Alt + .                                         : move focus to the right mon      
+Mod + Shift + <                                       : move client to the ;eft mon (?)  
+Mod + Shift + >                                       : move client to the right mon (?) 

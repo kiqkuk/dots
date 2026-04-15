@@ -1,0 +1,3 @@
+#!/bin/sh
+
+less ~/.local/share/dots/keymaps.txt | fzf --reverse
