@@ -31,11 +31,11 @@ static int log_level = WLR_ERROR;
 /* x,y,w,h in pixels; do not exceed screen resolution */
 static const Rule rules[] = {
 	/* app_id             title       tags mask     isfloating   monitor   x      y      w       h */
-	{ "foot",        "Clipboard",     0,            1,           -1,      460,   290,   1000,   490 },
-  { "foot",        "Wi-Fi",         0,            1,           -1,      760,   440,   400,    200 },
-  { "foot",        "Cheatsheet",    0,            1,           -1,      560,   40,    800,    1000 },
-  { "foot",        "Music",         0,            1,           -1,      710,   419,   500,    242 },
-  { "foot",        "Launch",        0,            1,           -1,      810,   365,   300,    350 },
+	{ "footclient",        "Clipboard",     0,            1,           -1,      460,   290,   1000,   490 },
+  { "footclient",        "Wi-Fi",         0,            1,           -1,      760,   440,   400,    200 },
+  { "footclient",        "Cheatsheet",    0,            1,           -1,      560,   40,    800,    1000 },
+  { "footclient",        "Music",         0,            1,           -1,      710,   419,   500,    242 },
+  { "footclient",        "Launch",        0,            1,           -1,      810,   365,   300,    350 },
     /* default/example rule: can be changed but cannot be eliminated; at least one rule must exist */
 };
 
@@ -127,7 +127,7 @@ static const enum libinput_config_tap_button_map button_map = LIBINPUT_CONFIG_TA
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* commands */
-static const char *termcmd[] = { "foot", NULL };
+static const char *termcmd[] = { "footclient", NULL };
 /* static const char *menucmd[] = { "wmenu-run", "-i", "-N", "1e1e2e", "-n", "cdd6f4", "-S", "b4befe", "-s", "1e1e2e", NULL }; */
 /* vol-control is a script to handle wpctl and someblocks signals */
 static const char *volup[]   = { "vol-control", "set-volume", "-l", "1.0", "@DEFAULT_AUDIO_SINK@", "5%+", NULL };
@@ -135,11 +135,11 @@ static const char *voldn[]   = { "vol-control", "set-volume", "@DEFAULT_AUDIO_SI
 static const char *volmute[] = { "vol-control", "set-mute", "@DEFAULT_AUDIO_SINK@", "toggle", NULL };
 static const char *screenshot[] = { "screenshot", NULL };
 static const char *webcmd[] = { "qutebrowser", NULL };
-static const char *wifitui[] = { "foot", "-T", "Wi-Fi", "tui-wifi", NULL };
-static const char *helptui[] = { "foot", "-T", "Cheatsheet", "tui-cheatsheet", NULL };
-static const char *cliptui[] = { "foot", "-T", "Clipboard", "tui-clipboard", NULL };
-static const char *musictui[] = { "foot", "-T", "Music", "tui-music", NULL};
-static const char *menutui[] = { "foot", "-T", "Launch", "tui-menu", NULL};
+static const char *wifitui[] = { "footclient", "-T", "Wi-Fi", "tui-wifi", NULL };
+static const char *helptui[] = { "footclient", "-T", "Cheatsheet", "tui-cheatsheet", NULL };
+static const char *cliptui[] = { "footclient", "-T", "Clipboard", "tui-clipboard", NULL };
+static const char *musictui[] = { "footclient", "-T", "Music", "tui-music", NULL};
+static const char *menutui[] = { "footclient", "-T", "Launch", "tui-menu", NULL};
 
 static const Key keys[] = {
 	/* Note that Shift changes certain key codes: 2 -> at, etc. */
