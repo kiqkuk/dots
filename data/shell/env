@@ -1,5 +1,7 @@
 # miru: environment | kiqkuk
 
+typeset -U path PATH fpath FPATH manpath MANPATH
+
 # XDG Base Directory Compliance
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
@@ -22,6 +24,7 @@ setopt HIST_REDUCE_BLANKS
 
 export PYTHONSTARTUP="$XDG_CONFIG_HOME/python/pythonrc"
 export WGETRC="$XDG_CONFIG_HOME/whet/wgetrc"
+export DIFFPROG="nvim -d"
 
 # Default Applications
 export TERMINAL="foot"

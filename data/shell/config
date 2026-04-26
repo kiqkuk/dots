@@ -3,7 +3,7 @@
 ZSH_CONF="$HOME/.local/share/miru/data/shell"
 
 # Load environment & PATH
-[[ -f "$ZSH_CONF/env" ]] && . "$ZSH_CONF/env"
+# [[ -f "$ZSH_CONF/env" ]] && . "$ZSH_CONF/env" # already sourece in .zprofile
 
 # Exit if not running interactively
 [[ -o interactive ]] || return
